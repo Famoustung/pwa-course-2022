@@ -2,6 +2,8 @@ import './App.css';
 
 function Userlist () {
   return (
+ 
+
     <div className="userlist">
     </div>
   )
@@ -16,6 +18,7 @@ function Chat () {
 
 function Inputbox () {
   return (
+   
     <div className="inputbox">
     </div>
   )
@@ -23,6 +26,7 @@ function Inputbox () {
 
 function App() {
   return (
+    
     <div className="App">
       <Userlist/>
       <Chat/>
