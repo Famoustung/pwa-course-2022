@@ -2,16 +2,24 @@
 Course for Progressive Web Apps 2022
 
 ------------------
-Exercise 03-02:
+Exercise 03-03:
 
-Prerequisite: node 16+
+Prerequisite: Exercise 03-02
 
-We are now will use node to create react project using `npx` command.
+Now after we have successfully create the react app.
+We are now want to change the web to the chat app interface.
+** Make sure you clean up the current branch by running the following commands:
 
-1. Run `npx create-react-app .`
-2. It will ask if we want to install create-react-app
-3. Enter `y` to install the package
-4. It will proceed to install and create a bounch of files
-5. Run `git add *` to add all files that is not list in .gitignore to repo
-6. Run `git commit -m "Succesfully create react app for <student_id>`
-7. `git push`
+
+```
+git checkout main --force
+git branch -D class/03/ex03
+git checkout -b class/03/ex03
+git merge class-origin/class/03/ex03
+```
+
+
+1. Run `npm start`
+2. You should see the lightgreen background app
+3. Change the app so it look just like the excerise03 in PDF
+4. commit & push
