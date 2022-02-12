@@ -5,13 +5,20 @@
   margin: auto;
   display: flex;
   flex-direction: column;
-  
+  background-image:  url(../public/anime_girl_PNG81.png);
+  background-size:  cover;
+  background-repeat: no-repeat;
 }
 
 
 @media screen and (max-width: 768px) {
   .chat{
+    
+    background-image: url(../public/tenor\ 1.gif);
+    background-size:  cover;
+    background-repeat: no-repeat;
     background-color: aqua;
+    
   }
 }
 
