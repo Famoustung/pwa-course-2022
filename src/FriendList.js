@@ -16,8 +16,8 @@ function FriendList(){
       <div className="friend-list">
        {
        friends.map (x=>
-        <div className= "friend-list-item" >
-          <Avatar Name = {friends}/> 
+        <div className= 'friend-list-item' >
+          <Avatar name = {x.user}/>
           {x.displayName}
           </div>
          )
