@@ -2,24 +2,26 @@
   position: absolute;
   top: 0px;
   bottom: 0px;
-  background-color: #331a12;
+  
   z-index: 100;
   transition: background-color 2s width 2s left 2s;
 }
 
 .userlist.closed {
-  width: 10px;
+  width: 30px;
+  background-color: #fa02c4;
 }
 
 .userlist.open {
   width: 200px;
+  background-color: #17fa02;
 }
 
 .userlist .close-button {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14pt;
-  background-color: azure;
-  border: gray 1px solid;
+  background-color: rgb(255, 255, 255);
+  border: rgb(99, 20, 20) 1px solid;
   border-radius: 50%;
   float: right;
   width: 32px;
@@ -34,7 +36,7 @@
   background-color: #cee740;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1920px) {
   .userlist {
     flex: 2;
     position: relative;
