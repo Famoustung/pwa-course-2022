@@ -29,7 +29,17 @@ function Chatline(props) {
     else if (text.startsWith("/randomfact")) {
       // ex10-01 here: Implement randomfact using fetch & promise
       // https://uselessfacts.jsph.pl/random.json?language=en
+      const [, name] = text.split(" ");
+      fetch("https://uselessfacts.jsph.pl/random.json?language=en" + name)
+        .then(res => res.json())
+        .then(data => setElement(data.fact));
 
+    }
+    else if (text.startsWith("/catfact")) {
+      const [, name] = text.split(" ");
+      fetch("https://catfact.ninja/fact" + name)
+        .then(res => res.json())
+        .then(data => setElement(data.cat));
     }
   };
 
